@@ -4,6 +4,11 @@ If you need the same models and relationships across multiple database providers
 
 The goal of this repository is to show how you can set up a solution to have one `DbContext` interface to multple providers. In this case, we'll be using our `VehiclesContext` to communicate with SQLite and PostgreSQL.
 
+## Prerequisites
+
+- .NET 7 (preview as of this repo creation)
+- Postgres instance or Docker container instance
+
 ## Provider Switching
 
 Provider switching happens in the host application. In this example, we're using a argument passed in at the start of the application lifetime. Since we're using the `IConfiguration` instance, we could also set this value using environment variables, JSON values, or through any other registered configuration provider.
