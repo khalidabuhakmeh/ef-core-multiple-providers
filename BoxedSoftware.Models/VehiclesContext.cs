@@ -14,6 +14,8 @@ public class VehiclesContext : DbContext
 
     public static async Task InitializeAsync(VehiclesContext db)
     {
+        await db.Database.MigrateAsync();
+        
         // already seeded
         if (db.Vehicles.Any())
             return;

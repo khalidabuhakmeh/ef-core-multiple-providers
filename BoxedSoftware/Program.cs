@@ -30,9 +30,6 @@ var app = builder.Build();
 // initialize database
 using (var scope = app.Services.CreateScope()) {
     var db = scope.ServiceProvider.GetRequiredService<VehiclesContext>();
-    
-    db.Database.Migrate();
-    
     await VehiclesContext.InitializeAsync(db);
 }
 
