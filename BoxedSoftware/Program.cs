@@ -1,7 +1,5 @@
 ﻿using BoxedSoftware.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.EntityFrameworkCore.Migrations;
 using static BoxedSoftware.Provider;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -32,11 +30,8 @@ var app = builder.Build();
 // initialize database
 using (var scope = app.Services.CreateScope()) {
     var db = scope.ServiceProvider.GetRequiredService<VehiclesContext>();
-
-    var migrator = db.Database.GetService<IMigrator>();
     
-    // migrate this ish
-    migrator.Migrate();
+    db.Database.Migrate();
     
     await VehiclesContext.InitializeAsync(db);
 }
