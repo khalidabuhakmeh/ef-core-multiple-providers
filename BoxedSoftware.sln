@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoxedSoftware", "BoxedSoftware\BoxedSoftware.csproj", "{24D46E54-F1F5-4D2D-8F4B-B6184B5C1C60}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Migrations", "Migrations", "{6581091D-0E5D-4F22-B98A-60B1170F4F3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoxedSoftware.Sqlite", "Migrations\BoxedSoftware.Sqlite\BoxedSoftware.Sqlite.csproj", "{2E4C06F6-9F67-435A-83EC-3F86A7286FE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoxedSoftware.Postgres", "Migrations\BoxedSoftware.Postgres\BoxedSoftware.Postgres.csproj", "{889E093D-5CFB-4BA0-A1A1-9B5D0CFAC37A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoxedSoftware.Models", "BoxedSoftware.Models\BoxedSoftware.Models.csproj", "{5B78E841-C0C7-482E-9022-550AC6CB0862}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24D46E54-F1F5-4D2D-8F4B-B6184B5C1C60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24D46E54-F1F5-4D2D-8F4B-B6184B5C1C60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24D46E54-F1F5-4D2D-8F4B-B6184B5C1C60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24D46E54-F1F5-4D2D-8F4B-B6184B5C1C60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E4C06F6-9F67-435A-83EC-3F86A7286FE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E4C06F6-9F67-435A-83EC-3F86A7286FE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E4C06F6-9F67-435A-83EC-3F86A7286FE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E4C06F6-9F67-435A-83EC-3F86A7286FE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{889E093D-5CFB-4BA0-A1A1-9B5D0CFAC37A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{889E093D-5CFB-4BA0-A1A1-9B5D0CFAC37A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{889E093D-5CFB-4BA0-A1A1-9B5D0CFAC37A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{889E093D-5CFB-4BA0-A1A1-9B5D0CFAC37A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B78E841-C0C7-482E-9022-550AC6CB0862}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B78E841-C0C7-482E-9022-550AC6CB0862}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B78E841-C0C7-482E-9022-550AC6CB0862}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B78E841-C0C7-482E-9022-550AC6CB0862}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2E4C06F6-9F67-435A-83EC-3F86A7286FE0} = {6581091D-0E5D-4F22-B98A-60B1170F4F3B}
+		{889E093D-5CFB-4BA0-A1A1-9B5D0CFAC37A} = {6581091D-0E5D-4F22-B98A-60B1170F4F3B}
+	EndGlobalSection
+EndGlobal
