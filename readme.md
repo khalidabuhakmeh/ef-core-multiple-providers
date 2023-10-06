@@ -2,7 +2,7 @@
 
 If you need the same models and relationships across multiple database providers, well then, this is the repository for you.
 
-The goal of this repository is to show how you can set up a solution to have one `DbContext` interface to multple providers. In this case, we'll be using our `VehiclesContext` to communicate with SQLite and PostgreSQL.
+The goal of this repository is to show how you can set up a solution to have one `DbContext` interface to multiple providers. In this case, we'll be using our `VehiclesContext` to communicate with SQLite and PostgreSQL.
 
 ## Prerequisites
 
