@@ -42,9 +42,9 @@ A fascinating side-effect is provider switching can also happen on each request,
 Commands are assumed to be running at the root of the solution directory, and you will need to adjust your paths depending on your solution and projects.
 
 ```console
-> dotnet ef migrations add <Migration Name> --project ./Migrations/BoxedSoftware.Sqlite -- --provider Sqlite
+> dotnet ef migrations add <Migration Name> --startup-project ./BoxedSoftware --project ./Migrations/BoxedSoftware.Sqlite - -- --provider Sqlite
 
-> dotnet ef migrations add <Migration Name> --project ./Migrations/BoxedSoftware.Postgres -- --provider Postgres
+> dotnet ef migrations add <Migration Name> --startup-project ./BoxedSoftware --project ./Migrations/BoxedSoftware.Postgres -- --provider Postgres
 ```
 
 ## Projects, Projects, Projects
